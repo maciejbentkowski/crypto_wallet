@@ -1,0 +1,8 @@
+<% @wallets.each do |wallet| %>
+      <tr>
+        <td><%= wallet.id %></td>
+            <%wallet.coins.each do |coin|%>
+            <%= coin.name%>
+            <%end%>
+
+<% end %>
